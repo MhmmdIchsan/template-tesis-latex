@@ -1,0 +1,26 @@
+%-----------------------------------------------------------------
+% LAMPIRAN
+%
+% Lampiran ditulis setelah Daftar Pustaka. Setiap lampiran diberi nomor
+% dengan \newappendix{Lampiran X: Judul Lampiran} agar muncul pada Daftar
+% Lampiran. Nomor halaman dilanjutkan dari bab terakhir.
+%-----------------------------------------------------------------
+\lampiran % \lampiran JANGAN DIHAPUS!
+
+\newappendix{Lampiran A: [Judul Lampiran]}
+
+Tuliskan isi lampiran di sini, misalnya daftar kode program, hasil pengujian,
+dokumentasi pengumpulan data, atau lembar persetujuan. Paparkan kode program
+dengan environment listings:
+
+\begin{lstlisting}[language=Python,caption={Contoh Kode Program},label={lst:contoh}]
+# Tulis kode program di sini
+def fungsi():
+    return None
+\end{lstlisting}
+
+Lampiran \ref{lst:contoh} menampilkan contoh kode program.
+
+\newappendix{Lampiran B: [Judul Lampiran]}
+
+Tuliskan isi lampiran kedua di sini.

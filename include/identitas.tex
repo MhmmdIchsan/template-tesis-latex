@@ -1,0 +1,151 @@
+%-----------------------------------------------------------------
+% IDENTITAS MAHASISWA
+%
+% File ini adalah SATU-SATUNYA file yang perlu diubah setiap kali template
+% ini dipakai. Semua halaman (sampul, pengesahan, pernyataan, kata pengantar)
+% membaca data dari sini, sehingga tidak ada data pribadi yang tersebar di
+% file lain.
+%
+% Cara pakai: setiap data memiliki dua macro.
+%   \setnamadata{...}  diisi satu kali di file ini (setter)
+%   \namadata          dibaca di seluruh naskah (getter)
+% Contoh: \setfullname{Muhammad Ichsan} diisi di sini, sedangkan
+% \fullname dipakai di tabel halaman pernyataan.
+%
+% Ganti nilai di dalam kurung kurawal { } dengan data Anda.
+%-----------------------------------------------------------------
+
+
+%-----------------------------------------------------------------
+% 1. JUDUL TESIS
+%-----------------------------------------------------------------
+
+% Judul untuk halaman sampul (boleh lebih panjang/menggunakan \textit{})
+\setjudulcover{[Judul Tesis dalam Bahasa Indonesia]}
+
+% Judul untuk halaman pengesahan dan berita acara
+\setjudul{[Judul Tesis dalam Bahasa Indonesia]}
+
+% Judul dalam Bahasa Inggris
+\setjudulinggris{[Thesis Title in English]}
+
+
+%-----------------------------------------------------------------
+% 2. IDENTITAS MAHASISWA
+%-----------------------------------------------------------------
+
+% Nama lengkap tanpa gelar, tidak boleh dicetak tebal
+\setfullname{[Nama Lengkap Mahasiswa]}
+
+% NIM (Nomor Induk Mahasiswa)
+\setidnum{[0000000000000]}
+
+% Tempat dan tanggal lahir (dipakai pada surat pernyataan bebas plagiasi)
+\settempatlahir{[Kota/Kabupaten]}
+\settanggallahir{[dd bulan yyyy]}
+
+% Status akademik (biasanya: Mahasiswa)
+\setstatusmahasiswa{Mahasiswa}
+
+
+%-----------------------------------------------------------------
+% 3. PROGRAM STUDI DAN INSTANSI
+%-----------------------------------------------------------------
+
+% Nama program studi, contoh: Magister Kecerdasan Buatan
+\setprogramstudi{Magister Kecerdasan Buatan}
+
+% Nama departemen tempat program studi berada
+\setdept{Informatika}
+
+% Fakultas, universitas, dan kota pencetakan
+\setfaculty{Fakultas Matematika dan Ilmu Pengetahuan Alam}
+
+% Nama singkat fakultas untuk halaman pengesahan
+\setfakultassingkat{FMIPA}
+\setuniversity{Universitas Syiah Kuala}
+\setcity{Banda Aceh}
+
+% Gelar yang diperoleh, contoh: Magister Komputer (M.Kom.)
+% SESUAIKAN dengan gelar resmi program studi Anda.
+\setjenjang{Magister}
+
+\setgelar{Magister Komputer}
+
+% Jenis dokumen: TESIS
+\setdokumen{TESIS}
+
+% Kalimat sebelum gelar di sampul.
+% Contoh untuk program magister: "Diajukan untuk memenuhi sebagian
+% persyaratan memperoleh gelar"
+\setsyarattext{Diajukan untuk melengkapi tugas-tugas dan\\ memenuhi syarat-syarat guna memperoleh gelar}
+
+% Tahun penulisan naskah tesis
+\setyearsubmit{[Bulan], [Tahun]}
+
+
+%-----------------------------------------------------------------
+% 4. DOSEN PEMBIMBING
+%-----------------------------------------------------------------
+
+% Pembimbing I
+\setfirstsupervisor{[Nama Dosen Pembimbing I]}
+\setfirstnip{[NIP Pembimbing I]}
+
+% Pembimbing II
+\setsecondsupervisor{[Nama Dosen Pembimbing II]}
+\setsecondnip{[NIP Pembimbing II]}
+
+
+%-----------------------------------------------------------------
+% 5. PIMPINAN FAKULTAS DAN PROGRAM STUDI
+%
+% Isi dengan nama pejabat yang berlaku pada saat naskah
+% dicetak. Cek ke bagian/program studi bila sudah berubah.
+%-----------------------------------------------------------------
+
+% Dekan fakultas
+\setdekan{[Nama Dekan]}
+\setdekannip{[NIP Dekan]}
+
+% Ketua departemen (jika ditampilkan pada halaman pengesahan)
+\setkajur{[Nama Ketua Departemen]}
+\setkajurnip{[NIP Ketua Departemen]}
+
+% Ketua program studi
+\setkaprodi{[Nama Ketua Program Studi]}
+\setkaprodinip{[NIP Ketua Program Studi]}
+
+% Koordinator tesis (tanda tangan pada surat pernyataan)
+\setkoordinatortesis{[Nama Koordinator Tesis]}
+\setkoordinatortesisnip{[NIP Koordinator Tesis]}
+
+
+%-----------------------------------------------------------------
+% 6. TANGGAL
+%-----------------------------------------------------------------
+
+% Tanggal ujian tesis, ditulis lengkap dengan nama hari.
+% Contoh: Senin, 17 Februari 2025
+\setapprovaldate{[Hari], [Tanggal] [Bulan] [Tahun]}
+
+% Tanggal penanda tanganan pada kata pengantar, surat pernyataan, dan
+% kalimat "Tesis disahkan pada hari ...".
+% Contoh: 14 Februari 2025
+\setdisahkantanggal{[Tanggal] [Bulan] [Tahun]}
+
+% Nama hari untuk kalimat "Tesis disahkan pada hari ..."
+% Contoh: Senin
+\setdisahkantanggalhari{[Hari]}
+
+
+%-----------------------------------------------------------------
+% 7. KATA KUNCI ABSTRAK (opsional, dipakai sebagai pengingat)
+%-----------------------------------------------------------------
+\setkeywordindo{[Kata kunci 1, Kata kunci 2, Kata kunci 3]}
+\setkeywordeng{[Keyword 1, Keyword 2, Keyword 3]}
+
+
+%-----------------------------------------------------------------
+% End of identitas.tex
+%-----------------------------------------------------------------

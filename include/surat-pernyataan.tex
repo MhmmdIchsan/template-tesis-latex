@@ -1,0 +1,137 @@
+%-----------------------------------------------------------------
+% SURAT PERNYATAAN
+%
+% Seluruh data diisi otomatis dari include/identitas.tex
+%-----------------------------------------------------------------
+\spernyataan % \spernyataan JANGAN DIHAPUS!
+
+\noindent
+Yang bertanda tangan di bawah ini,
+\vspace{-0.1cm}
+
+\begin{table}[H]
+\renewcommand{\arraystretch}{0.75}
+\begin{tabularx}{\textwidth}{@{}l p{2.9cm} c >{\raggedright\arraybackslash}X@{}}
+	1.	& Nama   	& : & \fullname \\
+		& NIM   	& : & \idnum \\
+		& Program Studi	& : & \programstudi \\
+		& Status 	& : & \statusmahasiswa \\[4pt]
+	2.	& Nama   	& : & \firstsupervisor \\
+		& NIP    	& : & \firstnip \\
+		& Program Studi	& : & \programstudi \\
+		& Status 	& : & Pembimbing I \\[4pt]
+	3.	& Nama   	& : & \secondsupervisor \\
+		& NIP    	& : & \secondnip \\
+		& Program Studi	& : & \programstudi \\
+		& Status 	& : & Pembimbing II
+\end{tabularx}
+\end{table}
+
+\vspace{-0.2cm}
+\noindent
+Dengan ini menyatakan hasil penelitian Tesis yang berjudul
+\textbf{``\MakeUppercase{\judul}''} tidak dipublikasikan secara
+\textit{full-text} di sistem ETD (\textit{Electronic Theses and
+Dissertations}) Universitas Syiah Kuala hingga batas waktu 5 tahun dari
+tanggal kelulusan.
+
+\vspace{0.3cm}
+\noindent
+Demikian surat pernyataan ini dibuat dengan sebenarnya untuk dapat
+dipergunakan seperlunya.
+
+\vspace{0.3cm}
+
+{\centering
+\city, \disahkantanggal\par
+\vspace{0.15cm}
+Yang membuat pernyataan,\par
+}
+
+%-------------------------------------------------------------
+% Lebar kolom diukur lebih dulu pada blok BAWAH (Ketua Program
+% Studi + Koordinator Tesis). Lebar itu lalu jadi acuan blok tiga
+% kolom di atasnya: kolom Pembimbing I dan II ikut lebar mengikuti,
+% sedangkan kolom mahasiswa dibiarkan setipis mungkin (namanya
+% tanpa gelar) dan terdorong sampai ke tepi kanan. Jadi kalau
+% blok bawah dilebarkan, blok atas ikut menyesuaikan.
+%-------------------------------------------------------------
+\ttdgutter=0.6cm
+\ttdkolomA=0pt \ttdkolomB=0pt
+\ttdukurA{Ketua Program Studi}\ttdukurA{\programstudi{} \fakultassingkat}%
+\ttdukurA{\university,}\ttdukurA{\kaprodi}\ttdukurA{NIP. \kaprodinip}%
+\ttdukurB{Koordinator Tesis,}\ttdukurB{\koordinatortesis}%
+\ttdukurB{NIP. \koordinatortesisnip}%
+\ttdfit
+\newlength\ttlebarblokTiga
+\setlength{\ttlebarblokTiga}{\dimexpr\ttdkolomA+\ttdkolomB+\ttdgutter\relax}
+
+%-------------------------------------------------------------
+% Tanda tangan mahasiswa dan kedua dosen pembimbing
+%-------------------------------------------------------------
+% Kolom mahasiswa dibiarkan pada lebar minimumnya (yang dikejar
+% NIM), sedangkan kolom pembimbing I dan II memakai seluruh sisa
+% ruang. Ruang blok tiga kolom diberi sedikit lebih longgar dari
+% blok bawah supaya kedua kolom pembimbing benar-benar bisa
+% melebar, tanpa keluar dari kertas.
+\ttdgutter=0.35cm
+\newlength\ttlebarAtas
+\setlength{\ttlebarAtas}{\dimexpr\textwidth+45pt\relax}
+\newlength\ttdgeserAtas
+\ttdcolA=0pt \ttdcolB=0pt \ttdcolC=0pt
+\ttdasarA{Pembimbing I,}\ttdasarA{NIP. \firstnip}\ttdnamaA{\firstsupervisor}%
+\ttdasarB{Pembimbing II,}\ttdasarB{NIP. \secondnip}\ttdnamaB{\secondsupervisor}%
+\ttdasarC{Mahasiswa,}\ttdasarC{NIM. \idnum}\ttdnamaC{\fullname}%
+\ttdfitTigaPada{\ttlebarAtas}%
+\setlength{\ttdgeserAtas}{\dimexpr(\ttlebarAtas-\textwidth)/2\relax}%
+\ifdim\ttdgeserAtas>25pt \setlength{\ttdgeserAtas}{25pt}\fi
+\par
+\noindent\hspace*{\dimexpr-\ttdgeserAtas\relax}%
+\parbox[t]{\ttdcolA}{\raggedright\setlength{\baselineskip}{14pt}%
+  Pembimbing I,\par
+  \vspace{1.1cm}%
+  \ttdnamaW[\ttdcolA]{\firstsupervisor}\par
+  \vspace{0.15cm}%
+  NIP. \firstnip}%
+\hspace*{\ttdgutter}%
+\parbox[t]{\ttdcolB}{\raggedright\setlength{\baselineskip}{14pt}%
+  Pembimbing II,\par
+  \vspace{1.1cm}%
+  \ttdnamaW[\ttdcolB]{\secondsupervisor}\par
+  \vspace{0.15cm}%
+  NIP. \secondnip}%
+\hspace*{\ttdgutter}%
+\parbox[t]{\ttdcolC}{\raggedright\setlength{\baselineskip}{14pt}%
+  Mahasiswa,\par
+  \vspace{1.1cm}%
+  \ttdnamaW[\ttdcolC]{\fullname}\par
+  \vspace{0.15cm}%
+  NIM. \idnum}\par
+
+\vspace{0.3cm}
+
+%-------------------------------------------------------------
+% Tanda tangan Ketua Program Studi dan Koordinator Tesis
+%-------------------------------------------------------------
+{\centering Mengetahui,\par}
+
+\vspace{0.55cm}
+\noindent\hspace*{\dimexpr-\ttdgeser\relax}%
+\parbox[t]{\ttdkolomA}{\raggedright\setlength{\baselineskip}{14pt}%
+  Ketua Program Studi\par
+  \programstudi{} \fakultassingkat\par
+  \university,}%
+\hspace*{\ttdgutter}%
+\parbox[t]{\ttdkolomB}{\raggedright\setlength{\baselineskip}{14pt}%
+  Koordinator Tesis,}\par
+\vspace{1.0cm}
+\noindent\hspace*{\dimexpr-\ttdgeser\relax}%
+\parbox[t]{\ttdkolomA}{\raggedright\setlength{\baselineskip}{14pt}%
+  \ttdnama[\ttdkolomA]{\kaprodi}\par
+  \vspace{0.15cm}%
+  NIP. \kaprodinip}%
+\hspace*{\ttdgutter}%
+\parbox[t]{\ttdkolomB}{\raggedright\setlength{\baselineskip}{14pt}%
+  \ttdnama[\ttdkolomB]{\koordinatortesis}\par
+  \vspace{0.15cm}%
+  NIP. \koordinatortesisnip}

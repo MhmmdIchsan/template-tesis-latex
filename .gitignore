@@ -1,0 +1,24 @@
+# Berkas hasil kompilasi LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.toc
+*.lot
+*.lof
+*.lol
+*.apc
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.pdf
+
+# Berkas cadangan
+*.bak
+*.swp
+*~
+
+# Editor
+.vscode/
+.idea/
